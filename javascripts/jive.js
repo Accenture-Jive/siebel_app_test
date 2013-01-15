@@ -226,7 +226,7 @@ $(document).ready(function () {
 			  'headers' : { 'Content-Type' : ['application/xml;charset=utf-8'], 'Accept-Language' : ['en-us']},
 			  'params' : { 'SWEExtData' : xmlInput } // Jive Connects will URI encode values for you
 			}).execute(function(response) {
-					console.log(response.data);
+					console.log("The webservice response is "+response.data);
 					if (!response.error) {
 					//console.log(response.content);
 					xmlDoc = response.content;
