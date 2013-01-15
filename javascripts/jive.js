@@ -974,6 +974,8 @@ $(document).ready(function () {
 		  'headers' : { 'Content-Type' : ['application/xml;charset=utf-8'], 'Accept-Language' : ['en-us']},
 		  'params' : { 'SWEExtData' : createXML } // Jive Connects will URI encode values for you
 		}).execute(function(response) {
+		console.log(response.error);
+		console.log(response.status)
 				if (!response.error) {
 				$("#infoMsg5").html("<b>Opportunity created successfully. <br />Refresh the App to see the reflected changes.</b>");
 				miniMessage.createTimerMessage(document.getElementById("infoMsg5"),4);
