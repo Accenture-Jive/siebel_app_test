@@ -967,7 +967,7 @@ $(document).ready(function () {
 		createXML = createXML + '<AccountIntegrationId/><IntegrationId/><Id/><OpptyId/><RowId/></Opportunity></ListOfOpportunityInterface></SiebelMessage></cus:FINSANIRequestProvidersInsert></soapenv:Body></soapenv:Envelope>';
 		createXML = createXML + "&UserName=" + SiebelUser + "&Password=" + SiebelPassword;
 		createXML = ConvertToString(createXML);
-		//console.log ("The Creation XML is: "+createXML);
+		console.log ("The Creation XML is: "+createXML);
 		osapi.jive.connects.get({
 		  'alias' : 'accenture',
 		  'format' : 'text',
