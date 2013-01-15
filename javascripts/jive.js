@@ -201,7 +201,7 @@ $(document).ready(function () {
 		console.log("In Loadtherecords in JIVE>JS");
 		
 		var xmlDoc = '';
-		console.log("INITIALIZED = "+INITIALIZED);
+		console.log("INITIALIZED1 = "+INITIALIZED);
 		//Initialize Buddy List
 		if (INITIALIZED == 0)
 		{
